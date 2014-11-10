@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		837D1A861A1072910038FF34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 837D1A851A1072910038FF34 /* main.m */; };
+		837D1A891A1072910038FF34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 837D1A881A1072910038FF34 /* AppDelegate.m */; };
+		837D1A8C1A1072910038FF34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837D1A8B1A1072910038FF34 /* ViewController.m */; };
+		837D1A8F1A1072910038FF34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837D1A8D1A1072910038FF34 /* Main.storyboard */; };
+		837D1A911A1072910038FF34 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837D1A901A1072910038FF34 /* Images.xcassets */; };
+		837D1A941A1072910038FF34 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 837D1A921A1072910038FF34 /* LaunchScreen.xib */; };
+		837D1AA01A1072910038FF34 /* NSUserDefaut_Segue_and_Protocols_SolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 837D1A9F1A1072910038FF34 /* NSUserDefaut_Segue_and_Protocols_SolutionTests.m */; };
+		837D1AAB1A1072DB0038FF34 /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837D1AAA1A1072DB0038FF34 /* SignInViewController.m */; };
+		837D1AAE1A1072EF0038FF34 /* CreateAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837D1AAD1A1072EF0038FF34 /* CreateAccountViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		837D1A9A1A1072910038FF34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 837D1A781A1072910038FF34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 837D1A7F1A1072910038FF34;
+			remoteInfo = "NSUserDefaut Segue and Protocols Solution";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		837D1A801A1072910038FF34 /* NSUserDefaut Segue and Protocols Solution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NSUserDefaut Segue and Protocols Solution.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		837D1A841A1072910038FF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837D1A851A1072910038FF34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		837D1A871A1072910038FF34 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		837D1A881A1072910038FF34 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		837D1A8A1A1072910038FF34 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		837D1A8B1A1072910038FF34 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		837D1A8E1A1072910038FF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		837D1A901A1072910038FF34 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		837D1A931A1072910038FF34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		837D1A991A1072910038FF34 /* NSUserDefaut Segue and Protocols SolutionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NSUserDefaut Segue and Protocols SolutionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		837D1A9E1A1072910038FF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837D1A9F1A1072910038FF34 /* NSUserDefaut_Segue_and_Protocols_SolutionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSUserDefaut_Segue_and_Protocols_SolutionTests.m; sourceTree = "<group>"; };
+		837D1AA91A1072DB0038FF34 /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		837D1AAA1A1072DB0038FF34 /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		837D1AAC1A1072EF0038FF34 /* CreateAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAccountViewController.h; sourceTree = "<group>"; };
+		837D1AAD1A1072EF0038FF34 /* CreateAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAccountViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		837D1A7D1A1072910038FF34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837D1A961A1072910038FF34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		837D1A771A1072910038FF34 = {
+			isa = PBXGroup;
+			children = (
+				837D1A821A1072910038FF34 /* NSUserDefaut Segue and Protocols Solution */,
+				837D1A9C1A1072910038FF34 /* NSUserDefaut Segue and Protocols SolutionTests */,
+				837D1A811A1072910038FF34 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		837D1A811A1072910038FF34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				837D1A801A1072910038FF34 /* NSUserDefaut Segue and Protocols Solution.app */,
+				837D1A991A1072910038FF34 /* NSUserDefaut Segue and Protocols SolutionTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		837D1A821A1072910038FF34 /* NSUserDefaut Segue and Protocols Solution */ = {
+			isa = PBXGroup;
+			children = (
+				837D1A871A1072910038FF34 /* AppDelegate.h */,
+				837D1A881A1072910038FF34 /* AppDelegate.m */,
+				837D1A8A1A1072910038FF34 /* ViewController.h */,
+				837D1A8B1A1072910038FF34 /* ViewController.m */,
+				837D1A8D1A1072910038FF34 /* Main.storyboard */,
+				837D1AA91A1072DB0038FF34 /* SignInViewController.h */,
+				837D1AAA1A1072DB0038FF34 /* SignInViewController.m */,
+				837D1AAC1A1072EF0038FF34 /* CreateAccountViewController.h */,
+				837D1AAD1A1072EF0038FF34 /* CreateAccountViewController.m */,
+				837D1A901A1072910038FF34 /* Images.xcassets */,
+				837D1A921A1072910038FF34 /* LaunchScreen.xib */,
+				837D1A831A1072910038FF34 /* Supporting Files */,
+			);
+			path = "NSUserDefaut Segue and Protocols Solution";
+			sourceTree = "<group>";
+		};
+		837D1A831A1072910038FF34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				837D1A841A1072910038FF34 /* Info.plist */,
+				837D1A851A1072910038FF34 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		837D1A9C1A1072910038FF34 /* NSUserDefaut Segue and Protocols SolutionTests */ = {
+			isa = PBXGroup;
+			children = (
+				837D1A9F1A1072910038FF34 /* NSUserDefaut_Segue_and_Protocols_SolutionTests.m */,
+				837D1A9D1A1072910038FF34 /* Supporting Files */,
+			);
+			path = "NSUserDefaut Segue and Protocols SolutionTests";
+			sourceTree = "<group>";
+		};
+		837D1A9D1A1072910038FF34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				837D1A9E1A1072910038FF34 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		837D1A7F1A1072910038FF34 /* NSUserDefaut Segue and Protocols Solution */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 837D1AA31A1072910038FF34 /* Build configuration list for PBXNativeTarget "NSUserDefaut Segue and Protocols Solution" */;
+			buildPhases = (
+				837D1A7C1A1072910038FF34 /* Sources */,
+				837D1A7D1A1072910038FF34 /* Frameworks */,
+				837D1A7E1A1072910038FF34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NSUserDefaut Segue and Protocols Solution";
+			productName = "NSUserDefaut Segue and Protocols Solution";
+			productReference = 837D1A801A1072910038FF34 /* NSUserDefaut Segue and Protocols Solution.app */;
+			productType = "com.apple.product-type.application";
+		};
+		837D1A981A1072910038FF34 /* NSUserDefaut Segue and Protocols SolutionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 837D1AA61A1072910038FF34 /* Build configuration list for PBXNativeTarget "NSUserDefaut Segue and Protocols SolutionTests" */;
+			buildPhases = (
+				837D1A951A1072910038FF34 /* Sources */,
+				837D1A961A1072910038FF34 /* Frameworks */,
+				837D1A971A1072910038FF34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				837D1A9B1A1072910038FF34 /* PBXTargetDependency */,
+			);
+			name = "NSUserDefaut Segue and Protocols SolutionTests";
+			productName = "NSUserDefaut Segue and Protocols SolutionTests";
+			productReference = 837D1A991A1072910038FF34 /* NSUserDefaut Segue and Protocols SolutionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		837D1A781A1072910038FF34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = cheshire;
+				TargetAttributes = {
+					837D1A7F1A1072910038FF34 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					837D1A981A1072910038FF34 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 837D1A7F1A1072910038FF34;
+					};
+				};
+			};
+			buildConfigurationList = 837D1A7B1A1072910038FF34 /* Build configuration list for PBXProject "NSUserDefaut Segue and Protocols Solution" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 837D1A771A1072910038FF34;
+			productRefGroup = 837D1A811A1072910038FF34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				837D1A7F1A1072910038FF34 /* NSUserDefaut Segue and Protocols Solution */,
+				837D1A981A1072910038FF34 /* NSUserDefaut Segue and Protocols SolutionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		837D1A7E1A1072910038FF34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				837D1A8F1A1072910038FF34 /* Main.storyboard in Resources */,
+				837D1A941A1072910038FF34 /* LaunchScreen.xib in Resources */,
+				837D1A911A1072910038FF34 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837D1A971A1072910038FF34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		837D1A7C1A1072910038FF34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				837D1AAB1A1072DB0038FF34 /* SignInViewController.m in Sources */,
+				837D1A8C1A1072910038FF34 /* ViewController.m in Sources */,
+				837D1AAE1A1072EF0038FF34 /* CreateAccountViewController.m in Sources */,
+				837D1A891A1072910038FF34 /* AppDelegate.m in Sources */,
+				837D1A861A1072910038FF34 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		837D1A951A1072910038FF34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				837D1AA01A1072910038FF34 /* NSUserDefaut_Segue_and_Protocols_SolutionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		837D1A9B1A1072910038FF34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 837D1A7F1A1072910038FF34 /* NSUserDefaut Segue and Protocols Solution */;
+			targetProxy = 837D1A9A1A1072910038FF34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		837D1A8D1A1072910038FF34 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				837D1A8E1A1072910038FF34 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		837D1A921A1072910038FF34 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				837D1A931A1072910038FF34 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		837D1AA11A1072910038FF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		837D1AA21A1072910038FF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		837D1AA41A1072910038FF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "NSUserDefaut Segue and Protocols Solution/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		837D1AA51A1072910038FF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "NSUserDefaut Segue and Protocols Solution/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		837D1AA71A1072910038FF34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NSUserDefaut Segue and Protocols SolutionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSUserDefaut Segue and Protocols Solution.app/NSUserDefaut Segue and Protocols Solution";
+			};
+			name = Debug;
+		};
+		837D1AA81A1072910038FF34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "NSUserDefaut Segue and Protocols SolutionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NSUserDefaut Segue and Protocols Solution.app/NSUserDefaut Segue and Protocols Solution";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		837D1A7B1A1072910038FF34 /* Build configuration list for PBXProject "NSUserDefaut Segue and Protocols Solution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				837D1AA11A1072910038FF34 /* Debug */,
+				837D1AA21A1072910038FF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		837D1AA31A1072910038FF34 /* Build configuration list for PBXNativeTarget "NSUserDefaut Segue and Protocols Solution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				837D1AA41A1072910038FF34 /* Debug */,
+				837D1AA51A1072910038FF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		837D1AA61A1072910038FF34 /* Build configuration list for PBXNativeTarget "NSUserDefaut Segue and Protocols SolutionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				837D1AA71A1072910038FF34 /* Debug */,
+				837D1AA81A1072910038FF34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 837D1A781A1072910038FF34 /* Project object */;
+}
