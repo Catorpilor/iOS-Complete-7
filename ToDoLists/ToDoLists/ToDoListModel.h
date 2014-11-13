@@ -12,9 +12,14 @@
 
 @interface ToDoListModel : NSObject
 
-@property (nonatomic,strong) NSString *toDoGoal;
+@property (nonatomic,copy) NSString *toDoGoal;
 @property (nonatomic) BOOL   bOutOfDate;
 @property (nonatomic) BOOL   bChecked;
 @property (nonatomic,strong) NSDate *endTime;
+
+//return a ToDoListModel item init with the
+-(id)initWithText:(NSString*) text;
+
++(id)toDoListWithText:(NSString *)text;
 
 @end

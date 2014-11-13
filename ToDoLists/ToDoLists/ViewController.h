@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ToDoListTableViewCell.h"
 
-@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate>
+@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UIScrollViewDelegate,ToDoListTableViewCellDelegate>
 
 
 

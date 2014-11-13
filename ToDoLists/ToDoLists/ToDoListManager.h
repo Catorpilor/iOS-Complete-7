@@ -9,11 +9,16 @@
 #import <Foundation/Foundation.h>
 #import "ToDoListModel.h"
 
+#define TODOITEM_LIST "to do list item"
+
 @interface ToDoListManager : NSObject
 
 + (instancetype)sharedManager;
 
+-(void)addToDoListWithText:(NSString *)text;
+
 //@property (nonatomic, strong, readonly) NSArray *toDoListArray;
 //@property (nonatomic, strong, readonly) NSArray *doneListArray;
+-(NSMutableArray *)listToDoItems;
 
 @end

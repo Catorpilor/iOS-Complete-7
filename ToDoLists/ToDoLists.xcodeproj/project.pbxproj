@@ -12,6 +12,11 @@
 		832C9FF31A11D67500E23A13 /* ToDoListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 832C9FF21A11D67500E23A13 /* ToDoListModel.m */; };
 		832C9FF61A11DB3200E23A13 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 832C9FF41A11DB3200E23A13 /* bg.png */; };
 		832C9FF71A11DB3200E23A13 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 832C9FF51A11DB3200E23A13 /* bg@2x.png */; };
+		832C9FFA1A137C7E00E23A13 /* new_bg@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 832C9FF81A137C7E00E23A13 /* new_bg@1x.png */; };
+		832C9FFB1A137C7E00E23A13 /* new_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 832C9FF91A137C7E00E23A13 /* new_bg@2x.png */; };
+		832C9FFF1A143A2A00E23A13 /* ToDoListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 832C9FFE1A143A2A00E23A13 /* ToDoListTableViewCell.m */; };
+		832CA0011A143A9500E23A13 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 832CA0001A143A9500E23A13 /* QuartzCore.framework */; };
+		832CA0071A14E63000E23A13 /* ToDoListStrikeThroughLable.m in Sources */ = {isa = PBXBuildFile; fileRef = 832CA0061A14E63000E23A13 /* ToDoListStrikeThroughLable.m */; };
 		837D1ABE1A1101870038FF34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 837D1ABD1A1101870038FF34 /* main.m */; };
 		837D1AC11A1101870038FF34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 837D1AC01A1101870038FF34 /* AppDelegate.m */; };
 		837D1AC41A1101870038FF34 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 837D1AC31A1101870038FF34 /* ViewController.m */; };
@@ -39,6 +44,13 @@
 		832C9FF21A11D67500E23A13 /* ToDoListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListModel.m; sourceTree = "<group>"; };
 		832C9FF41A11DB3200E23A13 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		832C9FF51A11DB3200E23A13 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
+		832C9FF81A137C7E00E23A13 /* new_bg@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new_bg@1x.png"; sourceTree = "<group>"; };
+		832C9FF91A137C7E00E23A13 /* new_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new_bg@2x.png"; sourceTree = "<group>"; };
+		832C9FFD1A143A2A00E23A13 /* ToDoListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListTableViewCell.h; sourceTree = "<group>"; };
+		832C9FFE1A143A2A00E23A13 /* ToDoListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListTableViewCell.m; sourceTree = "<group>"; };
+		832CA0001A143A9500E23A13 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		832CA0051A14E63000E23A13 /* ToDoListStrikeThroughLable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListStrikeThroughLable.h; sourceTree = "<group>"; };
+		832CA0061A14E63000E23A13 /* ToDoListStrikeThroughLable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListStrikeThroughLable.m; sourceTree = "<group>"; };
 		837D1AB81A1101870038FF34 /* ToDoLists.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoLists.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		837D1ABC1A1101870038FF34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		837D1ABD1A1101870038FF34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -61,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832CA0011A143A9500E23A13 /* QuartzCore.framework in Frameworks */,
 				7206181FD819535229352830 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,6 +91,7 @@
 		59B103D875743805C0A164BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				832CA0001A143A9500E23A13 /* QuartzCore.framework */,
 				C2BFFE0F84AC8491AD2A15FB /* libPods.a */,
 			);
 			name = Frameworks;
@@ -92,6 +106,17 @@
 				832C9FF21A11D67500E23A13 /* ToDoListModel.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		832C9FFC1A1439F200E23A13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				832CA0051A14E63000E23A13 /* ToDoListStrikeThroughLable.h */,
+				832CA0061A14E63000E23A13 /* ToDoListStrikeThroughLable.m */,
+				832C9FFD1A143A2A00E23A13 /* ToDoListTableViewCell.h */,
+				832C9FFE1A143A2A00E23A13 /* ToDoListTableViewCell.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		837D1AAF1A1101870038FF34 = {
@@ -121,6 +146,7 @@
 				837D1AC01A1101870038FF34 /* AppDelegate.m */,
 				837D1AC21A1101870038FF34 /* ViewController.h */,
 				837D1AC31A1101870038FF34 /* ViewController.m */,
+				832C9FFC1A1439F200E23A13 /* View */,
 				832C9FED1A1116BF00E23A13 /* Models */,
 				837D1AC51A1101870038FF34 /* Main.storyboard */,
 				837D1AC81A1101870038FF34 /* Images.xcassets */,
@@ -133,6 +159,8 @@
 		837D1ABB1A1101870038FF34 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				832C9FF81A137C7E00E23A13 /* new_bg@1x.png */,
+				832C9FF91A137C7E00E23A13 /* new_bg@2x.png */,
 				832C9FF41A11DB3200E23A13 /* bg.png */,
 				832C9FF51A11DB3200E23A13 /* bg@2x.png */,
 				837D1ABC1A1101870038FF34 /* Info.plist */,
@@ -252,8 +280,10 @@
 				837D1AC71A1101870038FF34 /* Main.storyboard in Resources */,
 				837D1ACC1A1101870038FF34 /* LaunchScreen.xib in Resources */,
 				832C9FF61A11DB3200E23A13 /* bg.png in Resources */,
+				832C9FFA1A137C7E00E23A13 /* new_bg@1x.png in Resources */,
 				837D1AC91A1101870038FF34 /* Images.xcassets in Resources */,
 				832C9FF71A11DB3200E23A13 /* bg@2x.png in Resources */,
+				832C9FFB1A137C7E00E23A13 /* new_bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +337,8 @@
 				837D1AC41A1101870038FF34 /* ViewController.m in Sources */,
 				832C9FF01A1116E200E23A13 /* ToDoListManager.m in Sources */,
 				837D1AC11A1101870038FF34 /* AppDelegate.m in Sources */,
+				832C9FFF1A143A2A00E23A13 /* ToDoListTableViewCell.m in Sources */,
+				832CA0071A14E63000E23A13 /* ToDoListStrikeThroughLable.m in Sources */,
 				832C9FF31A11D67500E23A13 /* ToDoListModel.m in Sources */,
 				837D1ABE1A1101870038FF34 /* main.m in Sources */,
 			);

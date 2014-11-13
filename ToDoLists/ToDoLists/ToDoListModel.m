@@ -10,4 +10,15 @@
 
 @implementation ToDoListModel
 
+-(id)initWithText:(NSString *)text{
+    if(self = [super init]){
+        self.toDoGoal = text;
+    }
+    return self;
+}
+
++(id)toDoListWithText:(NSString *)text{
+    return [[ToDoListModel alloc] initWithText:text];
+}
+
 @end
