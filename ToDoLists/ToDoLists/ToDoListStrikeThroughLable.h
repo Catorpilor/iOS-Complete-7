@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ToDoListStrikeThroughLable : UILabel
+@interface ToDoListStrikeThroughLable : UITextField
 
 //a boolean value that determine whether the lable should have a strikethrough or not
 @property (nonatomic) bool bStrikeThrough;

@@ -14,17 +14,35 @@
     CGPoint _originalCenter;
     BOOL _deleteOnDragRelease;
     BOOL _completeOnDragRelease;
-    ToDoListStrikeThroughLable *_label;
+    //ToDoListStrikeThroughLable *_label;
     CALayer *_itemCompleteLayer;
+    UILabel *_tickLabel;
+    UILabel *_crossLabel;
 }
+
+const float UI_CUES_MARGIN = 10.0f;
+const float UI_CUES_WIDTH = 50.0f;
+
 
 -(id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if(self){
+        _tickLabel = [self createCueLabel];
+        _tickLabel.text = @"\u2713";
+        _tickLabel.textAlignment = NSTextAlignmentRight;
+        [self addSubview:_tickLabel];
+        
+        _crossLabel = [self createCueLabel];
+        _crossLabel.text = @"\u2717";
+        _crossLabel.textAlignment = NSTextAlignmentLeft;
+        [self addSubview:_crossLabel];
+        
         _label = [[ToDoListStrikeThroughLable alloc] initWithFrame:CGRectNull];
         _label.textColor = [UIColor whiteColor];
         _label.font = [UIFont boldSystemFontOfSize:16];
         _label.backgroundColor =[UIColor clearColor];
+        _label.delegate = self;
+        _label.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
         [self addSubview:_label];
         //remove the default blue highlight for selected cells
         self.selectionStyle = UITableViewCellSelectionStyleNone;
@@ -46,6 +64,44 @@
     }
     return self;
 }
+
+-(UILabel *)createCueLabel{
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectNull];
+    label.textColor = [UIColor whiteColor];
+    label.font = [UIFont boldSystemFontOfSize:32.0];
+    label.backgroundColor = [UIColor clearColor];
+    return label;
+}
+
+#pragma mark - UITextFieldDelegate
+-(BOOL)textFieldShouldReturn:(UITextField *)textField{
+    
+    //here we have to check if textField is empty
+    
+    if([textField.text isEqualToString:@""]){
+        //call delegate to delete the cell
+        [self.delegate toDoItemDeleted:self.toDoItem];
+    }
+    
+    //close keyard on enter
+    [textField resignFirstResponder];
+    return NO;
+}
+
+-(BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
+    //distable editing of completed to-do items;
+    return !self.toDoItem.bChecked;
+}
+
+-(void)textFieldDidEndEditing:(UITextField *)textField{
+    [self.delegate cellDidEndEditing:self];
+    self.toDoItem.toDoGoal = textField.text;
+}
+
+-(void)textFieldDidBeginEditing:(UITextField *)textField{
+    [self.delegate cellDidBeginEditing:self];
+}
+
 
 
 #pragma mark - horizontal pan gesture methods
@@ -71,6 +127,14 @@
         //determine whether the item has been dragged far enough to init a delete/complte
         _deleteOnDragRelease = self.frame.origin.x < -self.frame.size.width/2;
         _completeOnDragRelease = self.frame.origin.x > self.frame.size.width/2;
+        float cueAlpha = fabsf(self.frame.origin.x) / (self.frame.size.width /2);
+        //NSLog(@"%f, %f",cueAlpha, self.frame.origin.x);
+        _tickLabel.alpha = cueAlpha;
+        _crossLabel.alpha = cueAlpha;
+        
+        //indicate when the item have been pulled far enough to invoke the given action;
+        _tickLabel.textColor = _completeOnDragRelease ? [UIColor greenColor] : [UIColor whiteColor];
+        _crossLabel.textColor = _deleteOnDragRelease ? [UIColor redColor] : [UIColor whiteColor];
     }
     
     if(recognize.state == UIGestureRecognizerStateEnded){
@@ -101,6 +165,8 @@ const float LABEL_LEFT_MARGIN = 15.0f;
     _gradientLayer.frame = self.bounds;
     _itemCompleteLayer.frame = self.bounds;
     _label.frame = CGRectMake(LABEL_LEFT_MARGIN, 0, self.bounds.size.width - LABEL_LEFT_MARGIN, self.bounds.size.height);
+    _tickLabel.frame = CGRectMake(-UI_CUES_WIDTH-UI_CUES_MARGIN, 0, UI_CUES_WIDTH, self.bounds.size.height);
+    _crossLabel.frame = CGRectMake(self.frame.size.width+UI_CUES_MARGIN, 0, UI_CUES_WIDTH, self.bounds.size.height);
 }
 
 -(void)setToDoItem:(ToDoListModel *)toDoItem{
